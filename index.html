@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>urban(1)</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .border {
+            height: 300px;
+            background-image: linear-gradient(to right, #EBA944, #E68C34);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- header section started  -->
+
+    <div class="container-fluid" id="head-bg">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent pt-0 pt-2">
+            <div class="container-fluid bg-#EAEAEA" style="width: 95%">
+                <a class="navbar-brand pt-0" href="#">
+                    <img src="assets/khidmatgar_logo1.png" class="mt-2" style="height: 80px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse m-auto mt-3 pt-1" id="navbarSupportedContent">
+                    <ul class="navbar-nav w-100 justify-content-center">
+                        <li class="nav-item">
+                            <a href="{{ route('registerUser', ['role_id' => 1]) }}" class="nav-link">Register As A
+                                Client</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{ route('labor_register', ['role_id' => 2]) }}" class="nav-link">Register As A
+                                Labor</a>
+                        </li>
+
+
+                        <li class="nav-item"><a href="" class="nav-link ">Help</a></li>
+                        <li class="nav-item"><a href="/login" class="nav-link ">Login</a></li>
+                        <li class="nav-item"><a href="{{ route('register') }}" class="nav-link ">Sign up</a></li>
+                    </ul>
+                    <button class="btn btn-primary ms-auto" id="navbtn">Let's Talk</button>
+                </div>
+                <!-- navbar ended -->
+            </div>
+        </nav>
+
+
+        <div class="row">
+            <div class="col-12">
+                <div style="padding-top: 100px;">
+                </div>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="row pt-3 pb-3 hedbox" style="position: relative;
+            top: 42px;">
+                <div class="col-6 d-flex pt-2 pb-2 justify-content-between m-auto dropdown1" style="background-color:
+                 rgb(255, 255, 255); box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                    <div class="mainbtn">
+                        <select name="" id="" class="btn3">
+                            <option value="">CATAGORY</option>
+                            <option value="">PLUMBER</option>
+                            <option value="">ELECTRITION</option>
+                            <option value="">PAINTER</option>
+                            <option value="">SWIPER</option>
+                        </select>
+                        <select name="" class="btn2" id="">
+                            <option value="">Distance</option>
+                            <option value="">2Km</option>
+                            <option value="">4Km</option>
+                            <option value="">6Km</option>
+                            <option value="">8Km</option>
+                        </select>
+                        <a href="popup/hire.html">
+                            <button type="button" class="btn1">Search</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- header section ended  -->
+    <!-- hero section started  -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class=" text-center">
+                <p class="fs-1 pt-5 text-center" style="margin-top: 34px;">
+                    Recently Joined
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="swiper mySwiper pt-5">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide text-center" id="hired"><a href="popup/carpanter.html"><img
+                            src="assets/carpenter.jpg"></a>
+                </div>
+                <div class="swiper-slide text-center" id="hired"><a href="popup/electrition.html"><img
+                            src="assets/electrition.jpg"></a></div>
+                <div class="swiper-slide text-center" id="hired"><a href="popup/plumber.html"><img
+                            src="assets/plumber.jpg"></a>
+                </div>
+                <div class="swiper-slide text-center" id="hired"><a href="popup/acrepair.html"><img
+                            src="assets/ac-services.jpg"></a></div>
+                <div class="swiper-slide text-center" id="hired"><a href="popup/acrepair.html"><img
+                            src="assets/ac-services.jpg"></a></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            loop: true,
+            breakpoints: {
+                480: {
+                    slidesPerView: 2
+                },
+                767: {
+                    slidesPerView: 3
+                },
+                1024: {
+                    slidesPerView: 4
+                },
+                1366: {
+                    slidesPerView: 4
+                }
+            },
+            spaceBetween: 20,
+            autoplay: true
+        });
+    </script>
+
+
+    <!-- hero section ended  -->
+
+    <!-- Our Professionals started -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="fs-1 text-center pt-5">
+                    Recently Hired
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="swiper mySwiper pt-5">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide text-center" id="hired"><a href="popup/carpanter.html"><img
+                            src="assets/carpenter.jpg"></a>
+                </div>
+                <div class="swiper-slide text-center" id="hired"><a href="popup/electrition.html"><img
+                            src="assets/electrition.jpg"></a></div>
+                <div class="swiper-slide text-center" id="hired"><a href="popup/plumber.html"><img
+                            src="assets/plumber.jpg"></a>
+                </div>
+                <div class="swiper-slide text-center" id="hired"><a href="popup/acrepair.html"><img
+                            src="assets/ac-services.jpg"></a></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            loop: true,
+            breakpoints: {
+                480: {
+                    slidesPerView: 2
+                },
+                767: {
+                    slidesPerView: 3
+                },
+                1024: {
+                    slidesPerView: 4
+                },
+                1366: {
+                    slidesPerView: 4
+                }
+            },
+            spaceBetween: 20,
+            // autoplay: true
+        });
+    </script>
+
+ 
+
+    <div class="container banner" style="position: relative; top: 70px;">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="parent p-4">
+                    <div>
+                        <h1> Get Appointment Easy <br> And Fast</h1>
+                    </div>
+                    <span>
+                        <input type="text" class="form-control-md border-0 input1" style=""
+                            id="exampleFormControlInput1">
+                    </span>
+                    <span>
+                        <button class="btn btn-secondary ">Enter</button>
+                    </span>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div style="display: flex; justify-content: end;">
+                    <img src="assets/web img.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Contact Us ended  -->
+
+
+    <!-- footer section started  -->
+    <div class="container" style="padding-top: 80px;">
+        <div class="row justify-content-center">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ps-0 p-3 d-grid justify-content-center">
+                <div class="fotr-logo">
+                    <img src="assets/khidmatgar_logo1.png" class="mt-2" style="height: 125px">
+                </div>
+                <div>
+                    <p class=" mt-2">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae libero, error pariatur
+                    </p>
+                </div>
+                <div class="fotricons d-flex mt-3 d-flex " style="gap: 8px;">
+                    <div class="fotr-iconfb ms-1 bg-light text-center rounded-circle">
+                        <a href="https://www.facebook.com/profile.php?id=100090527017731" target="_blank"><i
+                                class="fa-brands fa-facebook-f pt-2 mt-1 text-dark"></i>
+                        </a>
+                    </div>
+                    <div class="fotr-Twitter ms-1 bg-light text-center rounded-circle">
+                        <a href="https://twitter.com/DesignoL6204384" target="_blank">
+                            <i class="fa-brands fa-twitter pt-2 mt-1 text-dark"></i>
+                        </a>
+                    </div>
+                    <div class="fotr-insta ms-1 bg-light text-center rounded-circle">
+                        <a href="https://www.instagram.com/designolabofficial/" target="_blank">
+                            <i class="fa-brands fa-instagram pt-2 mt-1 text-dark"></i>
+                        </a>
+                    </div>
+                    <div class="fotr-linkedin ms-1 bg-light text-center rounded-circle">
+                        <a href="https://rb.gy/hdut3" target="_blank">
+                            <i class="fa-brands fa-linkedin-in pt-2 mt-1 text-dark"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-2  col-sm-6 d-flex pt-3" id="fotrlisthd">
+                <ul class="ps-0 fotr-srvices">
+                    <li id="fotr-list" class="fs-3 pt-2 mt-4 fw-bold ">Services</li>
+                    <li class=" pt-3   ms-2 " style="margin-top: 4px;" id="fotr-list">Electrition</li>
+                    <li class="ms-2 pt-3  " id="fotr-list">Carpenter</li>
+                    <li class="ms-2 pt-3  " id="fotr-list">Plumber</li>
+                    <li class="ms-2 pt-3  " id="fotr-list">Plumber</li>
+                    <li class="ms-2 pt-3  " id="fotr-list">Plumber</li>
+                </ul>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-2  col-sm-6 d-flex pt-3" id="fotrlisthd">
+                <ul class="ps-0 fotr-srvices">
+                    <li id="fotr-list" class="fs-3 pt-2 mt-4 fw-bold ">About</li>
+                    <li class=" pt-3   ms-2 " style="margin-top: 4px;" id="fotr-list">Careers</li>
+                    <li class="ms-2 pt-3  " id="fotr-list">Teams</li>
+                    <li class="ms-2 pt-3  " id="fotr-list">Partners</li>
+                    <li class="ms-2 pt-3  " id="fotr-list">Contact Us</li>
+                    <li class="ms-2 pt-3  " id="fotr-list">News & Press</li>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 d-grid justify-content-start pt-3">
+                <ul class="ps-0 fotr-srvices">
+                    <li id="fotr-list" class="fs-3 pt-2 mt-4 fw-bold ">Contact Us</li>
+                    <li class=" pt-3   ms-0 text-secondary" style="margin-top: 4px;" id="fotr-list">If you have question
+                        you can contact us.</li>
+                    <div class="d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="mail-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M21 3C21.5523 3 22 3.44772 22 4V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V19H20V7.3L12 14.5L2 5.5V4C2 3.44772 2.44772 3 3 3H21ZM8 15V17H0V15H8ZM5 10V12H0V10H5ZM19.5659 5H4.43414L12 11.8093L19.5659 5Z">
+                            </path>
+                        </svg>
+                        <li class=" pt-3 ms-2 " style="margin-top: 0px;" id="fotr-list"><a
+                                href="khidmatgaar625@gmail.com" style=""
+                                class="text-secondary">khidmatgaar625@gmail.com</a></li>
+                    </div>
+                    <div class="d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="mail-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M9.36556 10.6821C10.302 12.3288 11.6712 13.698 13.3179 14.6344L14.2024 13.3961C14.4965 12.9845 15.0516 12.8573 15.4956 13.0998C16.9024 13.8683 18.4571 14.3353 20.0789 14.4637C20.599 14.5049 21 14.9389 21 15.4606V19.9234C21 20.4361 20.6122 20.8657 20.1022 20.9181C19.5723 20.9726 19.0377 21 18.5 21C9.93959 21 3 14.0604 3 5.5C3 4.96227 3.02742 4.42771 3.08189 3.89776C3.1343 3.38775 3.56394 3 4.07665 3H8.53942C9.0611 3 9.49513 3.40104 9.5363 3.92109C9.66467 5.54288 10.1317 7.09764 10.9002 8.50444C11.1427 8.9484 11.0155 9.50354 10.6039 9.79757L9.36556 10.6821ZM6.84425 10.0252L8.7442 8.66809C8.20547 7.50514 7.83628 6.27183 7.64727 5H5.00907C5.00303 5.16632 5 5.333 5 5.5C5 12.9558 11.0442 19 18.5 19C18.667 19 18.8337 18.997 19 18.9909V16.3527C17.7282 16.1637 16.4949 15.7945 15.3319 15.2558L13.9748 17.1558C13.4258 16.9425 12.8956 16.6915 12.3874 16.4061L12.3293 16.373C10.3697 15.2587 8.74134 13.6303 7.627 11.6707L7.59394 11.6126C7.30849 11.1044 7.05754 10.5742 6.84425 10.0252Z">
+                            </path>
+                        </svg>
+                        <li class=" pt-3   ms-2 text-secondary" style="margin-top: 4px;" id="fotr-list">03023268465</li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- {{-- lower Footer  --}} -->
+    <div class="container-fluid" style="padding-top: 50px;">
+        <div class="row p-0">
+            <div class="col-12 p-0">
+                <div class="p-0" style="background-color: #000; height: 50px;">
+                    <p class="text-light d-flex justify-content-center" style="align-items: center; height: 50px;">
+                        @Copyright. All right reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section ended  -->
+    <script src="assets/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/d0871e1780.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
+
+<!-- data-aos="zoom-in" data-aos-duration="3000" -->

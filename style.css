@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* overflow: hidden  !important; */
+}
+
+/* navbar section started  */
+#head-bg {
+    background-image: url(assets/Khidmatgar-banner1350.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100%;
+}
+
+.nav-link {
+    /* list-style: none; */
+    padding-left: 25px;
+}
+
+#navbtn {
+    /* position: relative;
+    left: 25px; */
+    height: 35px;
+    width: 110px;
+    border-radius: 4px;
+    background-color: gray;
+    border: none;
+    outline: none;
+}
+
+/* navbar ended  */
+/* dropdown buttons started */
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    padding: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    display: none;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown button {
+    background: gray;
+    color: #FFFFFF;
+    border: none;
+    margin: 0;
+    height: 42px;
+    width: 150px;
+    font-size: 1em;
+}
+
+.dropdown a {
+    display: block;
+    padding: 0.2em 0.8em;
+    text-decoration: none;
+    background-color: transparent;
+    color: #333333;
+}
+
+.dropdown a:hover {
+    background: #BBBBBB;
+}
+
+/* dropdown buttons ended  */
+.field {
+    display: flex;
+    position: realtive;
+    flex-direction: row;
+}
+
+.field>input[type=text],
+.field>button {
+    display: block;
+    padding-left: 5px;
+    font: 1.2em 'Open sans';
+}
+
+.field>input[type=text] {
+    flex: 1;
+    padding-right: 3px;
+    border: 0.2em solid #819090;
+    border-left: none;
+    border-top: none;
+}
+
+.field>button {
+    margin: 0;
+    padding: 0.6em 0.8em;
+    background-color: #819090;
+    color: #fff;
+    border: none;
+}
+
+/* recently joind started */
+.swiper-slide {
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    height: 180px !important;
+    object-fit: cover;
+    transition: all ease 1s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.5) 0px 8px 16px -8px;
+}
+
+#joind {
+    width: 96%;
+}
+
+#hired img {
+    width: 99%;
+}
+
+.swiper-slide img:hover {
+    scale: 1.05;
+}
+
+/* recently joind ended */
+
+img {
+    object-fit: cover;
+}
+
+/* contact us section started */
+#cntct-txt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+#ph1,
+#ph2 {
+    border-radius: 13px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+ 
+ 
+.backcolor{
+    display: flex;
+    height: 300px;
+    background-image: linear-gradient(to right, #EBA944, #E68C34)
+    
+}
+.input1{
+    width: 400px;
+    height: 40px;
+    border: none;
+}
+.btn4{
+    position: relative;
+    right: 94px;
+    bottom: 1px;
+}
+
+
+#mail-svg{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: 18px;
+}
+#quote-btn{
+    position: relative;
+    top: 6px;
+    right: 80px;
+}
+/* contact us section ended  */
+/* footer section started  */
+#fotr-list {
+    list-style: none;
+}
+
+#fotrlisthd {
+    justify-content: center;
+}
+
+#ftr-mail:hover {
+    cursor: pointer;
+    color: #113e69;
+}
+
+.fotr-iconfb,
+.fotr-Twitter,
+.fotr-insta,
+.fotr-linkedin {
+    height: 40px;
+    width: 40px;
+    line-height: 35px;
+}
+
+#fotr-input {
+    height: 35px;
+    width: 250px;
+    border-radius: 3px;
+}
+.btn1{
+    padding: .5rem 2rem;
+     border: none;
+     background-color:white;
+}
+.btn3{
+    padding: .5rem 2rem;
+     border: none;
+}
+.btn2{
+    padding: .5rem 2rem;
+     border: none;
+}
+.banner {
+    /* height: 300px; */
+    width: 100%;
+    background-color: orange;
+}
+.input1{
+    height: 40px; 
+    width: 280px;
+}
+
+/* footer section ended  */
+@media screen and (max-width: 1201px) {
+    .btn4{
+        position: relative;
+        right: 0px;
+        left: 358px;
+        bottom: 62px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+     
+    .dropdown1{
+        width: 80%;
+        margin: auto;
+    }
+    .mainbtn{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+   
+    
+}
+@media screen and (max-width: 992px) {
+    .img1{
+        width: 85%;
+        height: 300px;
+    }
+    .txt1>h1{
+        font-size: 30px;
+    }
+    .txt1>input{
+        width: 300px;
+    }
+    .input1{
+        height: 40px; 
+        width: 200px;
+    }
+}
+/* @media screen and (min-width: 767px) {
+    .btn4{
+        position: relative;
+        left: 0;
+        bottom: 1px;
+    }
+} */
+
+
+ 
+ 
+@media screen and (max-width: 769px) {
+    #cntct-txt {
+        height: 200px;
+        margin-bottom: 25px;
+    }
+    #btn2hdr {
+        text-align: left;
+    }
+    .backcolor{
+        display: block;
+        width: 100%;
+        height: 510px;
+    }
+    /* .btn4{
+        position: relative;
+        left: -94px;
+        bottom: 1px;
+    } */
+}
+@media screen and (max-width: 595px) {
+        .btn1{
+            padding: .5rem 0rem
+        }
+        .btn3{
+            padding: .5rem 0rem
+        }
+}
+@media screen and (max-width: 575px) {
+    .fotr-srvices {
+        display: none;
+    }
+
+    #ph2 {
+        display: none;
+    }
+}
+@media screen and (max-width: 440px) {
+    .backcolor{
+        height: 600px;
+    }
+    .btn4{
+        position: relative;
+        left: 260px;
+        bottom: 62px;
+    }
+}
+@media screen and (max-width: 431px) {
+        .btn1{
+            font-size: 12px;
+        }
+        .btn2{
+            font-size: 12px;
+        }
+        .btn3{
+            font-size: 12px;
+        }
+}
+@media screen and (max-width: 425px) {
+    .input1{
+    height: 40px; 
+    width: 220px;
+}
+}
+@media screen and (max-width: 375px) {
+    .fotr-srvices {
+        display: block;
+        justify-content: start;
+    }
+
+    #fotrlisthd {
+        justify-content: start;
+    }
+    .mainbtn{
+        display: block;
+    }
+    .btn1{
+         width: 100%;
+    }
+    .btn2{
+        width: 100%;
+        padding: .5rem 0rem
+    }
+    .btn3{
+        width: 100%;
+    }
+    .txt1>h1{
+        font-size: 25px;
+    }
+    .txt1>input{
+        width: 200px;
+    }
+     
+    .input1{
+        height: 40px; 
+        width: 180px;
+    }
+}
+
+/* footer section ended */
